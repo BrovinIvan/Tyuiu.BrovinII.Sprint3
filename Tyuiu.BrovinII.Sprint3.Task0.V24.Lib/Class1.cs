@@ -11,7 +11,7 @@ namespace Tyuiu.BrovinII.Sprint3.Task0.V24.Lib
                 double term = Math.Pow(3 / (i + Math.Pow(value, -i)), 2);
                 val *= term;
             }
-            return val;
+            return Math.Round(val,3);
         }
     }
 }
