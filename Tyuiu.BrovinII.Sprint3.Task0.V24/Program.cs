@@ -18,7 +18,7 @@ namespace Tyuiu.BrovinII.Sprint3.Task0.V24
             int y = int.Parse(Console.ReadLine());
             Console.WriteLine("Введите конец");
             int z = int.Parse(Console.ReadLine());
-            Console.WriteLine("Результат: " + ds.GetMultiplySeries(x, y, z));
+            Console.WriteLine("Результат: " + Math.Round(ds.GetMultiplySeries(x, y, z),3));
         }
     }
 }
