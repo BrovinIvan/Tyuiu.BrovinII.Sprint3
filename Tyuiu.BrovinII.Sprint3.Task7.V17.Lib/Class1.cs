@@ -18,7 +18,7 @@ namespace Tyuiu.BrovinII.Sprint3.Task4.V20.Lib
                 }
                 else {
                     double y = (Math.Sin(x) / (x + 1.7)) - (Math.Cos(x) * 4 * x) - 6;
-                    result[i] = Math.Round(y,3);
+                    result[i] = Math.Round(y,2);
                 }
                 i++;
             }
