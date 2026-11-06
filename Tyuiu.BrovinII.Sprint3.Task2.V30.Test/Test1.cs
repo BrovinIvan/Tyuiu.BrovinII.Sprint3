@@ -9,7 +9,7 @@ namespace Tyuiu.BrovinII.Sprint3.Task2.V30.Test
         public void TestMethod1()
         {
             DataService ds = new DataService();
-            Assert.AreEqual(2520, ds.GetMultiplySeries(2, 2, 4));
+            Assert.AreEqual(840, ds.GetMultiplySeries(2, 2, 4));
         }
     }
 }

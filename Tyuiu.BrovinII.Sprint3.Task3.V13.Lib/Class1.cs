@@ -1,20 +1,27 @@
-﻿using System.Text;
+﻿using System.Diagnostics.CodeAnalysis;
+using System.Text;
 using tyuiu.cources.programming.interfaces.Sprint3;
 
-namespace Tyuiu.BrovinII.Sprint3.Task3.V13.Lib
+namespace Tyuiu.BrovinII.Sprint3.Task4.V20.Lib
 {
-    public class DataService : ISprint3Task3V13
+    public class DataService : ISprint3Task4V20
     {
-        public int ConvertStringToInt(string value)
+        public double Calculate(int startValue, int stopValue)
         {
-            StringBuilder sb = new StringBuilder();
-            foreach (char c in value) {
-                if (char.IsDigit(c))
+            double p = 1;
+            for (int i = startValue; i <= stopValue; i++) {
+                if (i == 0)
                 {
-                    sb.Append(c);
+                    continue;
                 }
+                if (Math.Abs(Math.Cos(i) - i) < 0.000001)
+                {
+                    continue;
+                }
+                double x = (double)i / (Math.Cos(i) - i) + 2.5;
+                p *= x;
             }
-            return int.Parse(sb.ToString());
+            return Math.Round(p,3);
         }
     }
 }
